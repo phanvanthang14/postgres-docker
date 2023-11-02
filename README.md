@@ -1,6 +1,6 @@
 # Docker using drupal, php 8.2, postgres 16.0 and ubuntu 22.04
 
-* If local installed, change port 5432 -> 5431
+* If local installed postgres, change port 5432 -> 5431
 
 ```
     postgres:
