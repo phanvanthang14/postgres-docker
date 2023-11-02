@@ -22,8 +22,8 @@
             - backend
 ```
 
-- setting file docker-composer.yml
-- username and password login database in file .env
+    - setting file docker-composer.yml
+    - username and password login database in file .env
 
 * Install xdebug support debug in coding
 
