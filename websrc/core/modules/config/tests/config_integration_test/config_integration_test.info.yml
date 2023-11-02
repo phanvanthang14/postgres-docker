@@ -1,0 +1,11 @@
+name: 'ConfigTest integration'
+type: module
+package: 'Testing'
+# version: VERSION
+dependencies:
+  - drupal:config_test
+
+# Information added by Drupal.org packaging script on 2022-12-15
+version: '10.0.0'
+project: 'drupal'
+datestamp: 1671126001

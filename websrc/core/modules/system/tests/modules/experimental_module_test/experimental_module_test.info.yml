@@ -1,0 +1,12 @@
+name: 'Experimental Test'
+type: module
+description: 'Module in the experimental package to test experimental functionality.'
+package: Core (Experimental)
+lifecycle: experimental
+lifecycle_link: https://example.com/experimental
+# version: 8.y.x-unstable
+
+# Information added by Drupal.org packaging script on 2022-12-15
+version: '10.0.0'
+project: 'drupal'
+datestamp: 1671126001

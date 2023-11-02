@@ -1,0 +1,40 @@
+version: '3'
+services:
+    postgres:
+        build: ./db
+        restart: always
+        volumes:
+            - ./db/sql:/docker-entrypoint-initdb.d
+        environment:
+            - POSTGRES_USER=$POSTGRES_USER
+            - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+        ports:
+            - 5431:5432
+        logging:
+            driver: "json-file"
+            options:
+                max-size: $LOG_SIZE
+                max-file: $LOG_FILES
+        networks:
+            - backend
+    web:
+        build: ./ubuntu
+        restart: always
+        volumes:
+            - ./websrc:/var/www/html/drupal
+        ports:
+            - 80:80
+        environment:
+            - TZ=$TIMEZONE
+            - APACHE_DOCUMENT_ROOT=/var/www/html/drupal
+        depends_on:
+            - postgres
+        logging:
+            driver: "json-file"
+            options:
+                max-size: $LOG_SIZE
+                max-file: $LOG_FILES
+        networks:
+            - backend
+networks:
+    backend:

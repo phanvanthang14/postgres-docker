@@ -1,0 +1,11 @@
+name: 'Test theme libraries empty'
+type: theme
+description: 'Test theme with empty libraries in theme.info.yml'
+# version: VERSION
+base theme: starterkit_theme
+libraries:
+
+# Information added by Drupal.org packaging script on 2022-12-15
+version: '10.0.0'
+project: 'drupal'
+datestamp: 1671126001

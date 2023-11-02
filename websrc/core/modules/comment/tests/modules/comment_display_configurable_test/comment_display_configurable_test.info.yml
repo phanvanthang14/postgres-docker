@@ -1,0 +1,10 @@
+name: 'Comment configurable display module tests'
+type: module
+description: 'Support module for comment \Drupal\Core\Field\BaseFieldDefinition::setDisplayConfigurable() testing.'
+package: Testing
+# version: VERSION
+
+# Information added by Drupal.org packaging script on 2022-12-15
+version: '10.0.0'
+project: 'drupal'
+datestamp: 1671126001

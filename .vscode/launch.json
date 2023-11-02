@@ -1,0 +1,14 @@
+{
+    "version": "0.2",
+    "configurations": [
+        {
+            "name": "Listen on Docker for Xdebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9003,
+            "pathMappings": {
+                "/var/www/html/drupal": "${workspaceFolder}/websrc"
+            }
+        }
+    ]
+}
